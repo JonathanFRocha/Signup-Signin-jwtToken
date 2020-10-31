@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ebf2f5;
+  background: rgb(110, 21, 125);
+  background: linear-gradient(180deg, rgba(110, 21, 125, 0.7147233893557423) 43%, rgba(0, 155, 255, 1) 100%);
+}
+
+body, input, button, textarea {
+  font: 600 18px Nunito, sans-serif;
+}

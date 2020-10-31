@@ -1,0 +1,17 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "admin",
+  "database": "jwt_project",
+  "entities": [
+    "src/models/*.ts"
+  ],
+  "migrations": [
+    "src/db/migration/**/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "src/db/migration"
+  }
+}
