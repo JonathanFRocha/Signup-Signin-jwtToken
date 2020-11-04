@@ -20,9 +20,13 @@ function Login() {
     await api.post('users/signin', dataLogin).then((resp) => {
     console.log(resp.data.token)
     sessionStorage.setItem('auth', resp.data.token)
-  }).catch( error => console.log(error))
-
     alert('logado com sucesso')
+  }).catch( error => {
+    console.log(error)
+    alert('Email ou Senha inválidos.')
+  })
+
+    
   }
 
 
