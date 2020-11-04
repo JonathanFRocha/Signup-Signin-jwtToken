@@ -16,15 +16,15 @@ function Signup() {
   async function handleSubmit(event: FormEvent){
     event.preventDefault();
 
-    const data = new FormData()
+    alert('cadastro tentando ser realizado')
 
-    data.append('fullName', fullName);
-    data.append('email', email);
-    data.append('password', password)
+    await api.post('users', {
+      "fullName": fullName,
+      "email": email,
+      "password": password
+    })
+
     alert('cadastro realizado com sucesso')
-    await api.post('users', data);
-
-    
 
     history.push('/')
 

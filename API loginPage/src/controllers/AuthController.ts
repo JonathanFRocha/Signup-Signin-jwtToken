@@ -11,7 +11,6 @@ export default {
   async authenticate(req:Request, res:Response){
     const repository = getRepository(User);
     const {
-      fullName,
       email,
       password 
     } = req.body
